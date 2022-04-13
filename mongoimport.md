@@ -6,6 +6,6 @@ curl --location --request GET 'https://www.vattenfall.se/api/price/spot/priceare
 ## Import the data
 
 ```bash
-mongoimport --collection=SN3 --jsonArray mongodb+srv://<username>:<password>@mongodb.net/energy_price
+mongoimport --collection=SN3 --jsonArray mongodb+srv://<username>:<password>@mongodb.net/energy_price our_data.json
 
 ```

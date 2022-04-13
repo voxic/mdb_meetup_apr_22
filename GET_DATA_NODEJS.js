@@ -1,7 +1,7 @@
 const request = require('request');
 const { MongoClient, ServerApiVersion } = require('mongodb');
 
-// Set request options
+// Set request options, replace ULR dates with your own preferred 
 var options = {
   'method': 'GET',
   'url': 'https://www.vattenfall.se/api/price/spot/pricearea/2022-04-01/2022-04-11/SN3'
@@ -12,7 +12,7 @@ request(options, function (error, response) {
   // check for error
   if (error) throw new Error(error);
 
-  // Setup our MongoDB client
+  // Setup our MongoDB client, replace URI with your own from the Atlas Cluster
   const uri = "mongodb+srv://<username>:<password>@mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
   const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true, serverApi: ServerApiVersion.v1 });
   

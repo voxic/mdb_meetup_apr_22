@@ -9,7 +9,8 @@ This guide will go over how you can fetch energy price data and store that in Mo
 
 ### What we will build
 ![Screenshot](snap.png)
-During this session we will create a dashboard using MongoDB Atlas Charts showing energy price over time and insights around the price.
+During this session we will create a dashboard using MongoDB Atlas Charts showing energy price over time and insights around the price.   
+We will also use the Atlas Chart embedding option to embed our chart in a web-application.
 
 ## Prerequisites
 
@@ -19,8 +20,7 @@ During this session we will create a dashboard using MongoDB Atlas Charts showin
 * Data
     * Data will be fetched using the following URL:  
     `https://www.vattenfall.se/api/price/spot/pricearea/<yyyy-mm-dd>/<yyyy-mm-dd>/SN3`  
-    This will fetch data between dates and price area SN3.  
-    Example fetch can be found in [REST_playground.rest](REST_playground.rest) file. 
+    This will fetch data between dates and price area SN3.
 
 
 ## Steps
@@ -31,9 +31,9 @@ During this session we will create a dashboard using MongoDB Atlas Charts showin
 
 ### 2. Import data to MongoDB Atlas
 - Using [mongoimport](mongoimport.md)
-- Using Compass
-- Using Python
-- Using Nodejs
+- Using [Compass](importdata_compass.md)
+- Using [Python](GET_DATA_PYTHON.py)
+- Using [Nodejs](GET_DATA_NODEJS.js)
 
 
 ### 3. Explore the data
@@ -43,7 +43,11 @@ During this session we will create a dashboard using MongoDB Atlas Charts showin
 ### 4. MongoDB Atlas Charts
 - Data sources
 - Data sources pipeline
-- Dashboard/Charts
+- Dashboard/Charts   
+
+["Getting started with Charts"](https://www.mongodb.com/docs/charts/)
 
 ### 5. Putting it all together
-- Charts EmbeddSDK
+- Charts EmbedSDK
+
+["Embed your charts"](https://www.mongodb.com/docs/charts/embedding-charts/)
